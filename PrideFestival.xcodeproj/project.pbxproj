@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		108C38BD46CAD0A4239CA407 /* Pods_PrideFestivalStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6B94E1349FF62BFDB89B9B /* Pods_PrideFestivalStaging.framework */; };
+		B62904481C7D0EB500BCE934 /* PrideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62904471C7D0EB500BCE934 /* PrideTableViewController.swift */; };
+		B636EF8B1C937541009EF372 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B636EF8A1C937541009EF372 /* EventTableViewCell.xib */; };
+		B636EF8D1C937D4A009EF372 /* VendorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B636EF8C1C937D4A009EF372 /* VendorTableViewCell.xib */; };
+		B6374ABF1C4ECFA90031152D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6374ABE1C4ECFA90031152D /* Keys.swift */; };
+		B6425E291C9864FB00FFE018 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6425E281C9864FA00FFE018 /* Enums.swift */; };
+		B643F3B01C9A22C400E7ADCD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3AF1C9A22C400E7ADCD /* Item.swift */; };
+		B6480EA320D1BA530016501A /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = B6480EA120D1BA530016501A /* fabric.apikey */; };
+		B6480EA420D1BA530016501A /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = B6480EA120D1BA530016501A /* fabric.apikey */; };
+		B648D7671CC8066100E13FFA /* PurpleButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648D7661CC8066100E13FFA /* PurpleButtonTableViewCell.swift */; };
+		B648D7691CC8101600E13FFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648D7681CC8101600E13FFA /* Constants.swift */; };
+		B64CB44B1C44509E00877968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44A1C44509E00877968 /* AppDelegate.swift */; };
+		B64CB44D1C44509E00877968 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44C1C44509E00877968 /* EventsViewController.swift */; };
+		B64CB44F1C44509E00877968 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44E1C44509E00877968 /* MapViewController.swift */; };
+		B64CB4521C44509E00877968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4501C44509E00877968 /* Main.storyboard */; };
+		B64CB4541C44509E00877968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4531C44509E00877968 /* Assets.xcassets */; };
+		B64CB4571C44509E00877968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4551C44509E00877968 /* LaunchScreen.storyboard */; };
+		B64CB4621C44509E00877968 /* PrideFestivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB4611C44509E00877968 /* PrideFestivalTests.swift */; };
+		B64CB47B1C4452CF00877968 /* VendorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB47A1C4452CF00877968 /* VendorsViewController.swift */; };
+		B64CB47D1C4471DD00877968 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB47C1C4471DD00877968 /* EventTableViewCell.swift */; };
+		B64CB4BB1C44790B00877968 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB4BA1C44790B00877968 /* Event.swift */; };
+		B6523EC61EE0C10100B873DB /* PrideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6523EC51EE0C10100B873DB /* PrideTableViewCell.swift */; };
+		B6523EC71EE0C10100B873DB /* PrideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6523EC51EE0C10100B873DB /* PrideTableViewCell.swift */; };
+		B66478951CF137DE001F80CD /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66478941CF137DE001F80CD /* InfoViewController.swift */; };
+		B67B8A261C52D064004A4370 /* VendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B8A251C52D064004A4370 /* VendorTableViewCell.swift */; };
+		B68221781D19A4A1009C3E8E /* SponsorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68221771D19A4A1009C3E8E /* SponsorsManager.swift */; };
+		B68439C11EB279860056F9E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648D7681CC8101600E13FFA /* Constants.swift */; };
+		B68439C21EB279860056F9E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3AF1C9A22C400E7ADCD /* Item.swift */; };
+		B68439C31EB279860056F9E7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBF8E1C494D5600632140 /* Date+Extension.swift */; };
+		B68439C41EB279860056F9E7 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B70C71C46B69900CAA84C /* ParseManager.swift */; };
+		B68439C51EB279860056F9E7 /* ParadeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BED1CB48E34003748E4 /* ParadeEvent.swift */; };
+		B68439C61EB279860056F9E7 /* PrideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2D2D01C580800004DC0F2 /* PrideTabBarController.swift */; };
+		B68439C71EB279860056F9E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44E1C44509E00877968 /* MapViewController.swift */; };
+		B68439C81EB279860056F9E7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3D8FE1CFFA45000610C4D /* String+Extension.swift */; };
+		B68439C91EB279860056F9E7 /* VendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B8A251C52D064004A4370 /* VendorTableViewCell.swift */; };
+		B68439CA1EB279860056F9E7 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E164DC1C9A0ACD00938406 /* FavoritesManager.swift */; };
+		B68439CB1EB279860056F9E7 /* PrideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62904471C7D0EB500BCE934 /* PrideTableViewController.swift */; };
+		B68439CC1EB279860056F9E7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66478941CF137DE001F80CD /* InfoViewController.swift */; };
+		B68439CD1EB279860056F9E7 /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7606D1C73BFB000DBEC4B /* MapOverlay.swift */; };
+		B68439CE1EB279860056F9E7 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9322B1CEB7BA4006F0FA5 /* SectionHeaderView.swift */; };
+		B68439D01EB279860056F9E7 /* ParadeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BF11CB490F7003748E4 /* ParadeEventTableViewCell.swift */; };
+		B68439D11EB279860056F9E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44A1C44509E00877968 /* AppDelegate.swift */; };
+		B68439D21EB279860056F9E7 /* SponsorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68221771D19A4A1009C3E8E /* SponsorsManager.swift */; };
+		B68439D31EB279860056F9E7 /* VendorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB47A1C4452CF00877968 /* VendorsViewController.swift */; };
+		B68439D41EB279860056F9E7 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB47C1C4471DD00877968 /* EventTableViewCell.swift */; };
+		B68439D51EB279860056F9E7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB4BA1C44790B00877968 /* Event.swift */; };
+		B68439D61EB279860056F9E7 /* ParadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BEF1CB48EB1003748E4 /* ParadeViewController.swift */; };
+		B68439D71EB279860056F9E7 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AAE58A1C5142A8005FF0F1 /* Vendor.swift */; };
+		B68439D81EB279860056F9E7 /* PrideAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB814D1C8F76EA0028D8E5 /* PrideAnnotation.swift */; };
+		B68439D91EB279860056F9E7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA14DD1C9B4FE6003CC43E /* FavoritesViewController.swift */; };
+		B68439DA1EB279860056F9E7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6425E281C9864FA00FFE018 /* Enums.swift */; };
+		B68439DB1EB279860056F9E7 /* PurpleButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648D7661CC8066100E13FFA /* PurpleButtonTableViewCell.swift */; };
+		B68439DC1EB279860056F9E7 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6374ABE1C4ECFA90031152D /* Keys.swift */; };
+		B68439DD1EB279860056F9E7 /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7606B1C73BBB700DBEC4B /* MapOverlayView.swift */; };
+		B68439DE1EB279860056F9E7 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB44C1C44509E00877968 /* EventsViewController.swift */; };
+		B68439E01EB279860056F9E7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9E2601C6A93950093095F /* libsqlite3.tbd */; };
+		B68439E11EB279860056F9E7 /* Pods_PrideFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4AE94517C1631C7776D510 /* Pods_PrideFestival.framework */; };
+		B68439E31EB279860056F9E7 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B636EF8A1C937541009EF372 /* EventTableViewCell.xib */; };
+		B68439E41EB279860056F9E7 /* ParadeEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68F3BF21CB490F7003748E4 /* ParadeEventTableViewCell.xib */; };
+		B68439E51EB279860056F9E7 /* PurpleButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */; };
+		B68439E61EB279860056F9E7 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B9322D1CEB7BD5006F0FA5 /* SectionHeaderView.xib */; };
+		B68439E71EB279860056F9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4551C44509E00877968 /* LaunchScreen.storyboard */; };
+		B68439E81EB279860056F9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4531C44509E00877968 /* Assets.xcassets */; };
+		B68439E91EB279860056F9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64CB4501C44509E00877968 /* Main.storyboard */; };
+		B68439EA1EB279860056F9E7 /* VendorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B636EF8C1C937D4A009EF372 /* VendorTableViewCell.xib */; };
+		B68F3BEE1CB48E34003748E4 /* ParadeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BED1CB48E34003748E4 /* ParadeEvent.swift */; };
+		B68F3BF01CB48EB1003748E4 /* ParadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BEF1CB48EB1003748E4 /* ParadeViewController.swift */; };
+		B68F3BF31CB490F7003748E4 /* ParadeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3BF11CB490F7003748E4 /* ParadeEventTableViewCell.swift */; };
+		B68F3BF41CB490F7003748E4 /* ParadeEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68F3BF21CB490F7003748E4 /* ParadeEventTableViewCell.xib */; };
+		B69B70C81C46B69900CAA84C /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B70C71C46B69900CAA84C /* ParseManager.swift */; };
+		B6AAE58B1C5142A8005FF0F1 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AAE58A1C5142A8005FF0F1 /* Vendor.swift */; };
+		B6AAE6B51EC397EE008C0911 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AAE6B41EC397EE008C0911 /* ShortcutManager.swift */; };
+		B6AAE6B61EC397EE008C0911 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AAE6B41EC397EE008C0911 /* ShortcutManager.swift */; };
+		B6B2D2D11C580800004DC0F2 /* PrideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2D2D01C580800004DC0F2 /* PrideTabBarController.swift */; };
+		B6B9322C1CEB7BA4006F0FA5 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9322B1CEB7BA4006F0FA5 /* SectionHeaderView.swift */; };
+		B6B9322E1CEB7BD5006F0FA5 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B9322D1CEB7BD5006F0FA5 /* SectionHeaderView.xib */; };
+		B6C3D8FF1CFFA45000610C4D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3D8FE1CFFA45000610C4D /* String+Extension.swift */; };
+		B6E164DD1C9A0ACD00938406 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E164DC1C9A0ACD00938406 /* FavoritesManager.swift */; };
+		B6E7606C1C73BBB700DBEC4B /* MapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7606B1C73BBB700DBEC4B /* MapOverlayView.swift */; };
+		B6E7606E1C73BFB000DBEC4B /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7606D1C73BFB000DBEC4B /* MapOverlay.swift */; };
+		B6F9E2611C6A93950093095F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9E2601C6A93950093095F /* libsqlite3.tbd */; };
+		B6FA14DE1C9B4FE6003CC43E /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA14DD1C9B4FE6003CC43E /* FavoritesViewController.swift */; };
+		B6FB814E1C8F76EA0028D8E5 /* PrideAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB814D1C8F76EA0028D8E5 /* PrideAnnotation.swift */; };
+		B6FD77CB1CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */; };
+		B6FFBF8F1C494D5600632140 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBF8E1C494D5600632140 /* Date+Extension.swift */; };
+		CA76CF46CD66B76660A85974 /* Pods_PrideFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4AE94517C1631C7776D510 /* Pods_PrideFestival.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64CB45E1C44509E00877968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64CB43F1C44509E00877968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64CB4461C44509E00877968;
+			remoteInfo = PrideFestival;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A51A50E5E1D8CAA999C1231 /* Pods_PrideFestivalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestivalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DE1A7B4A5C3E6BB63941E6 /* Pods_PrideFestivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6B94E1349FF62BFDB89B9B /* Pods_PrideFestivalStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestivalStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72536BE0F217A1D2D25C640D /* Pods-PrideFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrideFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival.release.xcconfig"; sourceTree = "<group>"; };
+		B62904471C7D0EB500BCE934 /* PrideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrideTableViewController.swift; sourceTree = "<group>"; };
+		B636EF8A1C937541009EF372 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		B636EF8C1C937D4A009EF372 /* VendorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorTableViewCell.xib; sourceTree = "<group>"; };
+		B6374ABE1C4ECFA90031152D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B63FEDB420868C1D0052F7A4 /* Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Staging.plist"; sourceTree = "<group>"; };
+		B6425E281C9864FA00FFE018 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B643F3AF1C9A22C400E7ADCD /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B6480EA120D1BA530016501A /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = SOURCE_ROOT; };
+		B648D7661CC8066100E13FFA /* PurpleButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurpleButtonTableViewCell.swift; sourceTree = "<group>"; };
+		B648D7681CC8101600E13FFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B64CB4471C44509E00877968 /* PrideFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrideFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64CB44A1C44509E00877968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B64CB44C1C44509E00877968 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		B64CB44E1C44509E00877968 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B64CB4511C44509E00877968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B64CB4531C44509E00877968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B64CB4561C44509E00877968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B64CB4581C44509E00877968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64CB45D1C44509E00877968 /* PrideFestivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrideFestivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64CB4611C44509E00877968 /* PrideFestivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrideFestivalTests.swift; sourceTree = "<group>"; };
+		B64CB4631C44509E00877968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64CB47A1C4452CF00877968 /* VendorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorsViewController.swift; sourceTree = "<group>"; };
+		B64CB47C1C4471DD00877968 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		B64CB4BA1C44790B00877968 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B6523EC51EE0C10100B873DB /* PrideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrideTableViewCell.swift; sourceTree = "<group>"; };
+		B66478941CF137DE001F80CD /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B67B8A251C52D064004A4370 /* VendorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorTableViewCell.swift; sourceTree = "<group>"; };
+		B68221771D19A4A1009C3E8E /* SponsorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsManager.swift; sourceTree = "<group>"; };
+		B68439F11EB279860056F9E7 /* PrideFestivalStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrideFestivalStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68F3BED1CB48E34003748E4 /* ParadeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeEvent.swift; sourceTree = "<group>"; };
+		B68F3BEF1CB48EB1003748E4 /* ParadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeViewController.swift; sourceTree = "<group>"; };
+		B68F3BF11CB490F7003748E4 /* ParadeEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeEventTableViewCell.swift; sourceTree = "<group>"; };
+		B68F3BF21CB490F7003748E4 /* ParadeEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParadeEventTableViewCell.xib; sourceTree = "<group>"; };
+		B69B70C71C46B69900CAA84C /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ParseManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B6AAE58A1C5142A8005FF0F1 /* Vendor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		B6AAE6B41EC397EE008C0911 /* ShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
+		B6B2D2D01C580800004DC0F2 /* PrideTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrideTabBarController.swift; sourceTree = "<group>"; };
+		B6B9322B1CEB7BA4006F0FA5 /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		B6B9322D1CEB7BD5006F0FA5 /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		B6C3D8FE1CFFA45000610C4D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B6E164DC1C9A0ACD00938406 /* FavoritesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		B6E7606B1C73BBB700DBEC4B /* MapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverlayView.swift; sourceTree = "<group>"; };
+		B6E7606D1C73BFB000DBEC4B /* MapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
+		B6F9E2601C6A93950093095F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B6FA14DD1C9B4FE6003CC43E /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		B6FB814D1C8F76EA0028D8E5 /* PrideAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrideAnnotation.swift; sourceTree = "<group>"; };
+		B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurpleButtonTableViewCell.xib; sourceTree = "<group>"; };
+		B6FFBF8E1C494D5600632140 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C2C1D0948D142C7BC02C655A /* Pods-PrideFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrideFestival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival.debug.xcconfig"; sourceTree = "<group>"; };
+		C40BA48B76F02FDDBB541097 /* Pods-PrideFestivalStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrideFestivalStaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging.release.xcconfig"; sourceTree = "<group>"; };
+		F22BE9BDA42505858360095A /* Pods-PrideFestivalStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrideFestivalStaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging.debug.xcconfig"; sourceTree = "<group>"; };
+		FD4AE94517C1631C7776D510 /* Pods_PrideFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64CB4441C44509E00877968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F9E2611C6A93950093095F /* libsqlite3.tbd in Frameworks */,
+				CA76CF46CD66B76660A85974 /* Pods_PrideFestival.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CB45A1C44509E00877968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68439DF1EB279860056F9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68439E01EB279860056F9E7 /* libsqlite3.tbd in Frameworks */,
+				B68439E11EB279860056F9E7 /* Pods_PrideFestival.framework in Frameworks */,
+				108C38BD46CAD0A4239CA407 /* Pods_PrideFestivalStaging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		884503AD2909BECE03F448F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2C1D0948D142C7BC02C655A /* Pods-PrideFestival.debug.xcconfig */,
+				72536BE0F217A1D2D25C640D /* Pods-PrideFestival.release.xcconfig */,
+				F22BE9BDA42505858360095A /* Pods-PrideFestivalStaging.debug.xcconfig */,
+				C40BA48B76F02FDDBB541097 /* Pods-PrideFestivalStaging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99EEBB6E75F5D65668A6E785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F9E2601C6A93950093095F /* libsqlite3.tbd */,
+				FD4AE94517C1631C7776D510 /* Pods_PrideFestival.framework */,
+				52DE1A7B4A5C3E6BB63941E6 /* Pods_PrideFestivalTests.framework */,
+				3A51A50E5E1D8CAA999C1231 /* Pods_PrideFestivalUITests.framework */,
+				5A6B94E1349FF62BFDB89B9B /* Pods_PrideFestivalStaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6425E2A1C986EF500FFE018 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				B648D7681CC8101600E13FFA /* Constants.swift */,
+				B6425E281C9864FA00FFE018 /* Enums.swift */,
+				B6E164DC1C9A0ACD00938406 /* FavoritesManager.swift */,
+				B68221771D19A4A1009C3E8E /* SponsorsManager.swift */,
+				B6374ABE1C4ECFA90031152D /* Keys.swift */,
+				B69B70C71C46B69900CAA84C /* ParseManager.swift */,
+				B6FB814D1C8F76EA0028D8E5 /* PrideAnnotation.swift */,
+				B6AAE6B41EC397EE008C0911 /* ShortcutManager.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		B64CB43E1C44509E00877968 = {
+			isa = PBXGroup;
+			children = (
+				B64CB4491C44509E00877968 /* PrideFestival */,
+				B64CB4601C44509E00877968 /* PrideFestivalTests */,
+				B64CB4481C44509E00877968 /* Products */,
+				99EEBB6E75F5D65668A6E785 /* Frameworks */,
+				884503AD2909BECE03F448F7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B64CB4481C44509E00877968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64CB4471C44509E00877968 /* PrideFestival.app */,
+				B64CB45D1C44509E00877968 /* PrideFestivalTests.xctest */,
+				B68439F11EB279860056F9E7 /* PrideFestivalStaging.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64CB4491C44509E00877968 /* PrideFestival */ = {
+			isa = PBXGroup;
+			children = (
+				B64CB44A1C44509E00877968 /* AppDelegate.swift */,
+				B6AAE58D1C5143D7005FF0F1 /* Models */,
+				B67B8A271C52D06B004A4370 /* Views */,
+				B6AAE58C1C5143CE005FF0F1 /* Controllers */,
+				B64EF7751C8DF57300631DBF /* Extensions */,
+				B64EF7761C8F433C00631DBF /* Resources */,
+				B6425E2A1C986EF500FFE018 /* Misc */,
+			);
+			indentWidth = 2;
+			path = PrideFestival;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		B64CB4601C44509E00877968 /* PrideFestivalTests */ = {
+			isa = PBXGroup;
+			children = (
+				B64CB4611C44509E00877968 /* PrideFestivalTests.swift */,
+				B64CB4631C44509E00877968 /* Info.plist */,
+			);
+			indentWidth = 2;
+			path = PrideFestivalTests;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		B64EF7751C8DF57300631DBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3D8FE1CFFA45000610C4D /* String+Extension.swift */,
+				B6FFBF8E1C494D5600632140 /* Date+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B64EF7761C8F433C00631DBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B64CB4501C44509E00877968 /* Main.storyboard */,
+				B64CB4531C44509E00877968 /* Assets.xcassets */,
+				B64CB4551C44509E00877968 /* LaunchScreen.storyboard */,
+				B64CB4581C44509E00877968 /* Info.plist */,
+				B63FEDB420868C1D0052F7A4 /* Info-Staging.plist */,
+				B6480EA120D1BA530016501A /* fabric.apikey */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B67B8A271C52D06B004A4370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6523EC51EE0C10100B873DB /* PrideTableViewCell.swift */,
+				B6B9322B1CEB7BA4006F0FA5 /* SectionHeaderView.swift */,
+				B6B9322D1CEB7BD5006F0FA5 /* SectionHeaderView.xib */,
+				B64CB47C1C4471DD00877968 /* EventTableViewCell.swift */,
+				B636EF8A1C937541009EF372 /* EventTableViewCell.xib */,
+				B67B8A251C52D064004A4370 /* VendorTableViewCell.swift */,
+				B636EF8C1C937D4A009EF372 /* VendorTableViewCell.xib */,
+				B68F3BF11CB490F7003748E4 /* ParadeEventTableViewCell.swift */,
+				B68F3BF21CB490F7003748E4 /* ParadeEventTableViewCell.xib */,
+				B648D7661CC8066100E13FFA /* PurpleButtonTableViewCell.swift */,
+				B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */,
+				B6E7606B1C73BBB700DBEC4B /* MapOverlayView.swift */,
+				B6E7606D1C73BFB000DBEC4B /* MapOverlay.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B6AAE58C1C5143CE005FF0F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2D2D01C580800004DC0F2 /* PrideTabBarController.swift */,
+				B62904471C7D0EB500BCE934 /* PrideTableViewController.swift */,
+				B64CB44C1C44509E00877968 /* EventsViewController.swift */,
+				B64CB44E1C44509E00877968 /* MapViewController.swift */,
+				B64CB47A1C4452CF00877968 /* VendorsViewController.swift */,
+				B68F3BEF1CB48EB1003748E4 /* ParadeViewController.swift */,
+				B6FA14DD1C9B4FE6003CC43E /* FavoritesViewController.swift */,
+				B66478941CF137DE001F80CD /* InfoViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B6AAE58D1C5143D7005FF0F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B643F3AF1C9A22C400E7ADCD /* Item.swift */,
+				B64CB4BA1C44790B00877968 /* Event.swift */,
+				B6AAE58A1C5142A8005FF0F1 /* Vendor.swift */,
+				B68F3BED1CB48E34003748E4 /* ParadeEvent.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64CB4461C44509E00877968 /* PrideFestival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64CB4711C44509E00877968 /* Build configuration list for PBXNativeTarget "PrideFestival" */;
+			buildPhases = (
+				EF42E989B4651B0F4ACB1195 /* [CP] Check Pods Manifest.lock */,
+				B64CB4431C44509E00877968 /* Sources */,
+				B64CB4441C44509E00877968 /* Frameworks */,
+				B64CB4451C44509E00877968 /* Resources */,
+				12B2D5D29D778DA164B94EF8 /* [CP] Embed Pods Frameworks */,
+				B62377E61E9A90BF00D7BFFA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrideFestival;
+			productName = PrideFestival;
+			productReference = B64CB4471C44509E00877968 /* PrideFestival.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B64CB45C1C44509E00877968 /* PrideFestivalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64CB4741C44509E00877968 /* Build configuration list for PBXNativeTarget "PrideFestivalTests" */;
+			buildPhases = (
+				B64CB4591C44509E00877968 /* Sources */,
+				B64CB45A1C44509E00877968 /* Frameworks */,
+				B64CB45B1C44509E00877968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64CB45F1C44509E00877968 /* PBXTargetDependency */,
+			);
+			name = PrideFestivalTests;
+			productName = PrideFestivalTests;
+			productReference = B64CB45D1C44509E00877968 /* PrideFestivalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B68439BE1EB279860056F9E7 /* PrideFestivalStaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68439EE1EB279860056F9E7 /* Build configuration list for PBXNativeTarget "PrideFestivalStaging" */;
+			buildPhases = (
+				B68439BF1EB279860056F9E7 /* [CP] Check Pods Manifest.lock */,
+				B68439C01EB279860056F9E7 /* Sources */,
+				B68439DF1EB279860056F9E7 /* Frameworks */,
+				B68439E21EB279860056F9E7 /* Resources */,
+				B68439EB1EB279860056F9E7 /* [CP] Embed Pods Frameworks */,
+				B68439ED1EB279860056F9E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrideFestivalStaging;
+			productName = PrideFestival;
+			productReference = B68439F11EB279860056F9E7 /* PrideFestivalStaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64CB43F1C44509E00877968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Software for Good";
+				TargetAttributes = {
+					B64CB4461C44509E00877968 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NK6NT4PE3R;
+						LastSwiftMigration = 0800;
+					};
+					B64CB45C1C44509E00877968 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						TestTargetID = B64CB4461C44509E00877968;
+					};
+					B68439BE1EB279860056F9E7 = {
+						DevelopmentTeam = NK6NT4PE3R;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = B64CB4421C44509E00877968 /* Build configuration list for PBXProject "PrideFestival" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B64CB43E1C44509E00877968;
+			productRefGroup = B64CB4481C44509E00877968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64CB4461C44509E00877968 /* PrideFestival */,
+				B68439BE1EB279860056F9E7 /* PrideFestivalStaging */,
+				B64CB45C1C44509E00877968 /* PrideFestivalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64CB4451C44509E00877968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B636EF8B1C937541009EF372 /* EventTableViewCell.xib in Resources */,
+				B68F3BF41CB490F7003748E4 /* ParadeEventTableViewCell.xib in Resources */,
+				B6FD77CB1CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib in Resources */,
+				B6480EA320D1BA530016501A /* fabric.apikey in Resources */,
+				B6B9322E1CEB7BD5006F0FA5 /* SectionHeaderView.xib in Resources */,
+				B64CB4571C44509E00877968 /* LaunchScreen.storyboard in Resources */,
+				B64CB4541C44509E00877968 /* Assets.xcassets in Resources */,
+				B64CB4521C44509E00877968 /* Main.storyboard in Resources */,
+				B636EF8D1C937D4A009EF372 /* VendorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CB45B1C44509E00877968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68439E21EB279860056F9E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68439E31EB279860056F9E7 /* EventTableViewCell.xib in Resources */,
+				B68439E41EB279860056F9E7 /* ParadeEventTableViewCell.xib in Resources */,
+				B68439E51EB279860056F9E7 /* PurpleButtonTableViewCell.xib in Resources */,
+				B6480EA420D1BA530016501A /* fabric.apikey in Resources */,
+				B68439E61EB279860056F9E7 /* SectionHeaderView.xib in Resources */,
+				B68439E71EB279860056F9E7 /* LaunchScreen.storyboard in Resources */,
+				B68439E81EB279860056F9E7 /* Assets.xcassets in Resources */,
+				B68439E91EB279860056F9E7 /* Main.storyboard in Resources */,
+				B68439EA1EB279860056F9E7 /* VendorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B2D5D29D778DA164B94EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHTMLLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62377E61E9A90BF00D7BFFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics, but this is only possible\"\necho \"with a Fabric API key and build secret. The build is failing because at least\"\necho \"one of these pieces are missing. To fix the problem, create the following files\"\necho \"and store the API key and build secret within these files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project, you need to either register with Fabric to obtain\"\necho \"your own key and build secret or simply delete the build script responsible\"\necho \"for this upload.\"\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${PODS_ROOT}/Fabric/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\n";
+		};
+		B68439BF1EB279860056F9E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrideFestivalStaging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B68439EB1EB279860056F9E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHTMLLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B68439ED1EB279860056F9E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics, but this is only possible\"\necho \"with a Fabric API key and build secret. The build is failing because at least\"\necho \"one of these pieces are missing. To fix the problem, create the following files\"\necho \"and store the API key and build secret within these files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project, you need to either register with Fabric to obtain\"\necho \"your own key and build secret or simply delete the build script responsible\"\necho \"for this upload.\"\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${PODS_ROOT}/Fabric/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\n";
+		};
+		EF42E989B4651B0F4ACB1195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrideFestival-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64CB4431C44509E00877968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B648D7691CC8101600E13FFA /* Constants.swift in Sources */,
+				B643F3B01C9A22C400E7ADCD /* Item.swift in Sources */,
+				B6FFBF8F1C494D5600632140 /* Date+Extension.swift in Sources */,
+				B69B70C81C46B69900CAA84C /* ParseManager.swift in Sources */,
+				B68F3BEE1CB48E34003748E4 /* ParadeEvent.swift in Sources */,
+				B6B2D2D11C580800004DC0F2 /* PrideTabBarController.swift in Sources */,
+				B64CB44F1C44509E00877968 /* MapViewController.swift in Sources */,
+				B6C3D8FF1CFFA45000610C4D /* String+Extension.swift in Sources */,
+				B6AAE6B51EC397EE008C0911 /* ShortcutManager.swift in Sources */,
+				B67B8A261C52D064004A4370 /* VendorTableViewCell.swift in Sources */,
+				B6523EC61EE0C10100B873DB /* PrideTableViewCell.swift in Sources */,
+				B6E164DD1C9A0ACD00938406 /* FavoritesManager.swift in Sources */,
+				B62904481C7D0EB500BCE934 /* PrideTableViewController.swift in Sources */,
+				B66478951CF137DE001F80CD /* InfoViewController.swift in Sources */,
+				B6E7606E1C73BFB000DBEC4B /* MapOverlay.swift in Sources */,
+				B6B9322C1CEB7BA4006F0FA5 /* SectionHeaderView.swift in Sources */,
+				B68F3BF31CB490F7003748E4 /* ParadeEventTableViewCell.swift in Sources */,
+				B64CB44B1C44509E00877968 /* AppDelegate.swift in Sources */,
+				B68221781D19A4A1009C3E8E /* SponsorsManager.swift in Sources */,
+				B64CB47B1C4452CF00877968 /* VendorsViewController.swift in Sources */,
+				B64CB47D1C4471DD00877968 /* EventTableViewCell.swift in Sources */,
+				B64CB4BB1C44790B00877968 /* Event.swift in Sources */,
+				B68F3BF01CB48EB1003748E4 /* ParadeViewController.swift in Sources */,
+				B6AAE58B1C5142A8005FF0F1 /* Vendor.swift in Sources */,
+				B6FB814E1C8F76EA0028D8E5 /* PrideAnnotation.swift in Sources */,
+				B6FA14DE1C9B4FE6003CC43E /* FavoritesViewController.swift in Sources */,
+				B6425E291C9864FB00FFE018 /* Enums.swift in Sources */,
+				B648D7671CC8066100E13FFA /* PurpleButtonTableViewCell.swift in Sources */,
+				B6374ABF1C4ECFA90031152D /* Keys.swift in Sources */,
+				B6E7606C1C73BBB700DBEC4B /* MapOverlayView.swift in Sources */,
+				B64CB44D1C44509E00877968 /* EventsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CB4591C44509E00877968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CB4621C44509E00877968 /* PrideFestivalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68439C01EB279860056F9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68439C11EB279860056F9E7 /* Constants.swift in Sources */,
+				B68439C21EB279860056F9E7 /* Item.swift in Sources */,
+				B68439C31EB279860056F9E7 /* Date+Extension.swift in Sources */,
+				B68439C41EB279860056F9E7 /* ParseManager.swift in Sources */,
+				B68439C51EB279860056F9E7 /* ParadeEvent.swift in Sources */,
+				B68439C61EB279860056F9E7 /* PrideTabBarController.swift in Sources */,
+				B68439C71EB279860056F9E7 /* MapViewController.swift in Sources */,
+				B68439C81EB279860056F9E7 /* String+Extension.swift in Sources */,
+				B6AAE6B61EC397EE008C0911 /* ShortcutManager.swift in Sources */,
+				B68439C91EB279860056F9E7 /* VendorTableViewCell.swift in Sources */,
+				B6523EC71EE0C10100B873DB /* PrideTableViewCell.swift in Sources */,
+				B68439CA1EB279860056F9E7 /* FavoritesManager.swift in Sources */,
+				B68439CB1EB279860056F9E7 /* PrideTableViewController.swift in Sources */,
+				B68439CC1EB279860056F9E7 /* InfoViewController.swift in Sources */,
+				B68439CD1EB279860056F9E7 /* MapOverlay.swift in Sources */,
+				B68439CE1EB279860056F9E7 /* SectionHeaderView.swift in Sources */,
+				B68439D01EB279860056F9E7 /* ParadeEventTableViewCell.swift in Sources */,
+				B68439D11EB279860056F9E7 /* AppDelegate.swift in Sources */,
+				B68439D21EB279860056F9E7 /* SponsorsManager.swift in Sources */,
+				B68439D31EB279860056F9E7 /* VendorsViewController.swift in Sources */,
+				B68439D41EB279860056F9E7 /* EventTableViewCell.swift in Sources */,
+				B68439D51EB279860056F9E7 /* Event.swift in Sources */,
+				B68439D61EB279860056F9E7 /* ParadeViewController.swift in Sources */,
+				B68439D71EB279860056F9E7 /* Vendor.swift in Sources */,
+				B68439D81EB279860056F9E7 /* PrideAnnotation.swift in Sources */,
+				B68439D91EB279860056F9E7 /* FavoritesViewController.swift in Sources */,
+				B68439DA1EB279860056F9E7 /* Enums.swift in Sources */,
+				B68439DB1EB279860056F9E7 /* PurpleButtonTableViewCell.swift in Sources */,
+				B68439DC1EB279860056F9E7 /* Keys.swift in Sources */,
+				B68439DD1EB279860056F9E7 /* MapOverlayView.swift in Sources */,
+				B68439DE1EB279860056F9E7 /* EventsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B64CB45F1C44509E00877968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64CB4461C44509E00877968 /* PrideFestival */;
+			targetProxy = B64CB45E1C44509E00877968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B64CB4501C44509E00877968 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64CB4511C44509E00877968 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B64CB4551C44509E00877968 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64CB4561C44509E00877968 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B64CB46F1C44509E00877968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B64CB4701C44509E00877968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64CB4721C44509E00877968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C1D0948D142C7BC02C655A /* Pods-PrideFestival.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = AppIcon_dev;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
+				BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-App-Dev";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PrideFestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B64CB4731C44509E00877968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72536BE0F217A1D2D25C640D /* Pods-PrideFestival.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
+				BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-App";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PrideFestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		B64CB4751C44509E00877968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrideFestivalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrideFestival.app/PrideFestival";
+			};
+			name = Debug;
+		};
+		B64CB4761C44509E00877968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrideFestivalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrideFestival.app/PrideFestival";
+			};
+			name = Release;
+		};
+		B68439EF1EB279860056F9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22BE9BDA42505858360095A /* Pods-PrideFestivalStaging.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = AppIcon_dev;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_dev;
+				BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-App-Dev";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NK6NT4PE3R;
+				INFOPLIST_FILE = "$(SRCROOT)/PrideFestival/Info-Staging.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSTAGING";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B68439F01EB279860056F9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40BA48B76F02FDDBB541097 /* Pods-PrideFestivalStaging.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_dev;
+				BUNDLE_IDENTIFIER = "com.softwareforgood.Twin-Cities-Pride-Festival-App";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NK6NT4PE3R;
+				INFOPLIST_FILE = "$(SRCROOT)/PrideFestival/Info-Staging.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSTAGING";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64CB4421C44509E00877968 /* Build configuration list for PBXProject "PrideFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CB46F1C44509E00877968 /* Debug */,
+				B64CB4701C44509E00877968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64CB4711C44509E00877968 /* Build configuration list for PBXNativeTarget "PrideFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CB4721C44509E00877968 /* Debug */,
+				B64CB4731C44509E00877968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64CB4741C44509E00877968 /* Build configuration list for PBXNativeTarget "PrideFestivalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CB4751C44509E00877968 /* Debug */,
+				B64CB4761C44509E00877968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68439EE1EB279860056F9E7 /* Build configuration list for PBXNativeTarget "PrideFestivalStaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68439EF1EB279860056F9E7 /* Debug */,
+				B68439F01EB279860056F9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B64CB43F1C44509E00877968 /* Project object */;
+}

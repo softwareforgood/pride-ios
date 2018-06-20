@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen_top" translatesAutoresizingMaskIntoConstraints="NO" id="Rme-5K-LJw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="241.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rme-5K-LJw" secondAttribute="height" multiplier="300:193" id="M9J-Eb-bt0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="RCV-nJ-oZ9">
+                                <rect key="frame" x="0.0" y="442" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RCV-nJ-oZ9" secondAttribute="height" multiplier="5:3" id="fEG-z0-chU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen_center" translatesAutoresizingMaskIntoConstraints="NO" id="Ect-AT-ZIu">
+                                <rect key="frame" x="92" y="201" width="190" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ect-AT-ZIu" secondAttribute="height" multiplier="38:53" id="Cft-uz-gvt"/>
+                                    <constraint firstAttribute="width" constant="190" id="ijl-x8-tKh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RCV-nJ-oZ9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1Bt-em-d9Y"/>
+                            <constraint firstAttribute="bottom" secondItem="RCV-nJ-oZ9" secondAttribute="bottom" id="8MP-Ga-JXx"/>
+                            <constraint firstAttribute="trailing" secondItem="RCV-nJ-oZ9" secondAttribute="trailing" id="G2z-vt-May"/>
+                            <constraint firstItem="Rme-5K-LJw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TGE-jW-tXE"/>
+                            <constraint firstItem="Ect-AT-ZIu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jHj-kW-viG"/>
+                            <constraint firstAttribute="trailing" secondItem="Rme-5K-LJw" secondAttribute="trailing" id="k37-j2-L80"/>
+                            <constraint firstItem="Ect-AT-ZIu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mEM-Bq-em8"/>
+                            <constraint firstItem="Rme-5K-LJw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ywx-PU-APa"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashscreen_bottom" width="1540" height="926"/>
+        <image name="splashscreen_center" width="748" height="1045"/>
+        <image name="splashscreen_top" width="1532" height="986"/>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="paradeEventCell" rowHeight="130" id="Eoa-rg-Unk" customClass="ParadeEventTableViewCell" customModule="PrideFestival" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eoa-rg-Unk" id="BD2-Zo-dx8">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parade_event_cell_parade_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-hF-B75">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="130"/>
+                        <color key="backgroundColor" red="0.0" green="0.42745098039215684" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="JaF-Rg-wqZ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyy-Z2-ZyM">
+                        <rect key="frame" x="555" y="48" width="35" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="1vT-VT-Q1G"/>
+                            <constraint firstAttribute="width" constant="35" id="TNg-dK-Bfw"/>
+                        </constraints>
+                        <state key="normal" image="make_favorite_button_not_favorited"/>
+                        <connections>
+                            <action selector="didTapMakeFavoriteButton:" destination="Eoa-rg-Unk" eventType="touchUpInside" id="eSk-f0-HO8"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-GE-sPf">
+                        <rect key="frame" x="95" y="77" width="452" height="41"/>
+                        <string key="text">Lemme hear everybody say hey-yo! All the ladies say yeaaah! Everybody over thirty do this with your hand! Everybody with a red shirt jump up and down! Yo, everyone whose first name begins with an L who isn't hispanic, walk in a circle the same number of times as the square root of your age times teeenn!</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very Long Event Name Yes We've Got a Very Long Event Name Right Here Fellas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpB-Zi-RMP">
+                        <rect key="frame" x="95" y="8" width="452" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="QqY-yY-gcW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lineup number: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxc-k8-BLO">
+                        <rect key="frame" x="114" y="57" width="433" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="dTT-rS-WOA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_cell_time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="P6e-Mh-eOl">
+                        <rect key="frame" x="95" y="57" width="15" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="7Uu-e5-ttO"/>
+                            <constraint firstAttribute="height" constant="14" id="RHl-ra-xQf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JBk-GE-sPf" firstAttribute="leading" secondItem="Tna-hF-B75" secondAttribute="trailing" constant="15" id="0Fv-zm-eaq"/>
+                    <constraint firstItem="Tna-hF-B75" firstAttribute="leading" secondItem="BD2-Zo-dx8" secondAttribute="leading" id="1dQ-vG-ugJ"/>
+                    <constraint firstItem="P6e-Mh-eOl" firstAttribute="top" secondItem="dpB-Zi-RMP" secondAttribute="bottom" constant="6" id="BnZ-EB-hWh"/>
+                    <constraint firstItem="Tna-hF-B75" firstAttribute="top" secondItem="BD2-Zo-dx8" secondAttribute="top" id="D24-xf-J9y"/>
+                    <constraint firstAttribute="bottom" secondItem="Tna-hF-B75" secondAttribute="bottom" id="HJ2-rn-NYZ"/>
+                    <constraint firstItem="P6e-Mh-eOl" firstAttribute="leading" secondItem="Tna-hF-B75" secondAttribute="trailing" constant="15" id="VpX-dQ-Jrr"/>
+                    <constraint firstItem="Uxc-k8-BLO" firstAttribute="top" secondItem="dpB-Zi-RMP" secondAttribute="bottom" constant="6" id="adm-9g-Gxb"/>
+                    <constraint firstAttribute="bottom" secondItem="JBk-GE-sPf" secondAttribute="bottom" constant="12" id="cQE-bg-ME6"/>
+                    <constraint firstItem="Uxc-k8-BLO" firstAttribute="leading" secondItem="P6e-Mh-eOl" secondAttribute="trailing" constant="4" id="hAP-ON-gqq"/>
+                    <constraint firstItem="Oyy-Z2-ZyM" firstAttribute="centerY" secondItem="BD2-Zo-dx8" secondAttribute="centerY" id="hkH-Sh-z0m"/>
+                    <constraint firstItem="JBk-GE-sPf" firstAttribute="top" secondItem="Uxc-k8-BLO" secondAttribute="bottom" constant="6" id="hp8-iF-HZG"/>
+                    <constraint firstAttribute="trailing" secondItem="JBk-GE-sPf" secondAttribute="trailing" constant="53" id="lRn-ef-P0X"/>
+                    <constraint firstAttribute="trailing" secondItem="Oyy-Z2-ZyM" secondAttribute="trailing" constant="10" id="msl-nR-C9Y"/>
+                    <constraint firstItem="JBk-GE-sPf" firstAttribute="top" secondItem="P6e-Mh-eOl" secondAttribute="bottom" constant="6" id="oCt-FG-1rg"/>
+                    <constraint firstItem="Oyy-Z2-ZyM" firstAttribute="leading" secondItem="Uxc-k8-BLO" secondAttribute="trailing" constant="8" id="pbU-6L-x9T"/>
+                    <constraint firstAttribute="trailing" secondItem="dpB-Zi-RMP" secondAttribute="trailing" constant="53" id="r9i-os-ZWW"/>
+                    <constraint firstItem="dpB-Zi-RMP" firstAttribute="top" secondItem="BD2-Zo-dx8" secondAttribute="top" constant="8" id="xFc-Fm-8gp"/>
+                    <constraint firstItem="dpB-Zi-RMP" firstAttribute="leading" secondItem="Tna-hF-B75" secondAttribute="trailing" constant="15" id="ym9-FK-58m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsLabel" destination="JBk-GE-sPf" id="nXj-SO-xJS"/>
+                <outlet property="iconImageView" destination="Tna-hF-B75" id="kAF-xa-2kV"/>
+                <outlet property="lineupNumberLabel" destination="Uxc-k8-BLO" id="jgl-6z-u7y"/>
+                <outlet property="makeFavoriteButton" destination="Oyy-Z2-ZyM" id="ZUE-s6-JS0"/>
+                <outlet property="nameLabel" destination="dpB-Zi-RMP" id="PCC-cq-hRI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="event_cell_time_icon" width="67" height="63"/>
+        <image name="make_favorite_button_not_favorited" width="156" height="143"/>
+        <image name="parade_event_cell_parade_icon" width="55" height="100"/>
+    </resources>
+</document>
