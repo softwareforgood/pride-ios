@@ -17,8 +17,11 @@
 
 1. Install [CocoaPods](http://cocoapods.org/).
 2. Run `pod install` in the root folder of the repository.
-3. Obtain the files `fabric.apikey` and `fabric.buildsecret` and add them to the root of the project. They can also be created with your own keys, or you can remove Fabric integration.
-3. Open `PrideFestival.xcworkspace` in Xcode 9.4.
+3. Obtain the `fabric.apikey` file and place in the project root, or create an empty file `fabric.apikey`.
+4. Optional: Obtain the `fabric.buildsecret` file and place it in the project root.
+5. Open `PrideFestival.xcworkspace` in Xcode 9.4.
+6. If you don't have a `fabric.buildsecret` file, run the `PrideFestivalStaging` target. Otherwise, you can run either target.
+
 
 ## Contributing
 
