@@ -15,11 +15,9 @@
 
 ## Getting started
 
-The app requires Xcode 9.4 to build and run, which can be obtained from the Mac App Store. It also uses [CocoaPods](http://cocoapods.org/) to integrate third-party frameworks.
-
-1. Install CocoaPods on your machine.
+1. Install [CocoaPods](http://cocoapods.org/).
 2. Run `pod install` in the root folder of the repository.
-3. Open `PrideFestival.xcworkspace` (instead of `PrideFestival.xcodeproj`).
+3. Open `PrideFestival.xcworkspace` in Xcode 9.4.
 
 ## Contributing
 
