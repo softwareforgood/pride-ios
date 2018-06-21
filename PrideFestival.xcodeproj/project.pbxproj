@@ -398,7 +398,6 @@
 				B68439DF1EB279860056F9E7 /* Frameworks */,
 				B68439E21EB279860056F9E7 /* Resources */,
 				B68439EB1EB279860056F9E7 /* [CP] Embed Pods Frameworks */,
-				B68439ED1EB279860056F9E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -576,19 +575,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		B68439ED1EB279860056F9E7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics, but this is only possible\"\necho \"with a Fabric API key and build secret. The build is failing because at least\"\necho \"one of these pieces are missing. To fix the problem, create the following files\"\necho \"and store the API key and build secret within these files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project, you need to either register with Fabric to obtain\"\necho \"your own key and build secret or simply delete the build script responsible\"\necho \"for this upload.\"\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${PODS_ROOT}/Fabric/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\n";
 		};
 		EF42E989B4651B0F4ACB1195 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
