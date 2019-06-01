@@ -162,7 +162,7 @@ class ParseManager {
     return itemsWithLocation
   }
 
-  func fetchDataFrom(file: PFFile, completion: @escaping (_ data: Data) -> Void) {
+  func fetchDataFrom(file: PFFileObject, completion: @escaping (_ data: Data) -> Void) {
     file.getDataInBackground {(data: Data?, error: Error?) -> Void in
       if error != nil {
         print("Error getting data: \(String(describing: error))")

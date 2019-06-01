@@ -37,7 +37,7 @@ class Vendor: Item {
 
     super.init(object: object)
 
-    if let logo = object["logo"] as? PFFile {
+    if let logo = object["logo"] as? PFFileObject {
       ParseManager.shared.fetchDataFrom(file: logo) {
         (logoData: Data) in
         self.logo = UIImage(data: logoData)
