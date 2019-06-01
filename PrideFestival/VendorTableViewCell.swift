@@ -57,11 +57,11 @@ class VendorTableViewCell: PrideTableViewCell {
     if FavoritesManager.isFavorited(item: vendor) {
       makeFavoriteButton.setImage(UIImage(
         named: "make_favorite_button_favorited"),
-        for: UIControlState())
+        for: UIControl.State())
     } else {
       makeFavoriteButton.setImage(UIImage(
         named: "make_favorite_button_not_favorited"),
-        for: UIControlState())
+        for: UIControl.State())
     }
   }
 

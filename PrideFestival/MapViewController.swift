@@ -58,26 +58,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
   // MARK: Init, viewDidLoad, etc.
 
   required init?(coder aDecoder: NSCoder) {
-    let parkTopLeft = MKMapPointForCoordinate(parkTopLeftCoordinate)
-    let parkBottomRight = MKMapPointForCoordinate(parkBottomRightCoordinate)
-    parkMapRect = MKMapRectMake(
-      parkTopLeft.x,
-      parkTopLeft.y,
-      parkBottomRight.x - parkTopLeft.x,
-      parkBottomRight.y - parkTopLeft.y)
+    let parkTopLeft = MKMapPoint.init(parkTopLeftCoordinate)
+    let parkBottomRight = MKMapPoint.init(parkBottomRightCoordinate)
+    parkMapRect = MKMapRect.init(
+      x: parkTopLeft.x,
+      y: parkTopLeft.y,
+      width: parkBottomRight.x - parkTopLeft.x,
+      height: parkBottomRight.y - parkTopLeft.y)
     parkCenterCoordinate = CLLocationCoordinate2DMake(
       parkMapRect.origin.x + parkMapRect.size.width / 2,
       parkMapRect.origin.y + parkMapRect.size.height / 2)
 
-    let sponsorVendorsTopLeft = MKMapPointForCoordinate(
+    let sponsorVendorsTopLeft = MKMapPoint.init(
       sponsorVendorsTopLeftCoordinate)
-    let sponsorVendorsBottomRight = MKMapPointForCoordinate(
+    let sponsorVendorsBottomRight = MKMapPoint.init(
       sponsorVendorsBottomRightCoordinate)
-    sponsorVendorsMapRect = MKMapRectMake(
-      sponsorVendorsTopLeft.x,
-      sponsorVendorsTopLeft.y,
-      sponsorVendorsBottomRight.x - sponsorVendorsTopLeft.x,
-      sponsorVendorsBottomRight.y - sponsorVendorsTopLeft.y)
+    sponsorVendorsMapRect = MKMapRect.init(
+      x: sponsorVendorsTopLeft.x,
+      y: sponsorVendorsTopLeft.y,
+      width: sponsorVendorsBottomRight.x - sponsorVendorsTopLeft.x,
+      height: sponsorVendorsBottomRight.y - sponsorVendorsTopLeft.y)
     sponsorVendorsCenterCoordinate = CLLocationCoordinate2DMake(
       sponsorVendorsMapRect.origin.x + sponsorVendorsMapRect.size.width / 2,
       sponsorVendorsMapRect.origin.y + sponsorVendorsMapRect.size.height / 2)
@@ -182,7 +182,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                                image: image,
                                type: .mainOverlay)
       overlayViewMain = MapOverlayView(overlay: overlay, overlayImage: image)
-      mapView.add(overlay, level: .aboveRoads)
+      mapView.addOverlay(overlay, level: .aboveRoads)
     }
     if let image = UIImage(named: "loring_park_sponsor_vendors_overlay") {
       let overlay = MapOverlay(coordinate: parkCenterCoordinate,
@@ -191,7 +191,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                                type: .sponsorVendors)
       overlayViewSponsorVendors = MapOverlayView(overlay: overlay,
                                                  overlayImage: image)
-      mapView.add(overlay, level: .aboveRoads)
+      mapView.addOverlay(overlay, level: .aboveRoads)
     }
   }
 
@@ -242,14 +242,14 @@ extension MapViewController: MKMapViewDelegate {
 
   func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
     let region = mapView.region
-    let a = MKMapPointForCoordinate(CLLocationCoordinate2DMake(
+    let a = MKMapPoint.init(CLLocationCoordinate2DMake(
       region.center.latitude + region.span.latitudeDelta / 2,
       region.center.longitude - region.span.longitudeDelta / 2))
-    let b = MKMapPointForCoordinate(CLLocationCoordinate2DMake(
+    let b = MKMapPoint.init(CLLocationCoordinate2DMake(
       region.center.latitude - region.span.latitudeDelta / 2,
       region.center.longitude + region.span.longitudeDelta / 2))
-    let mapViewRect = MKMapRectMake(min(a.x, b.x), min(a.y, b.y),
-      abs(a.x - b.x), abs(a.y - b.y))
+    let mapViewRect = MKMapRect.init(x: min(a.x, b.x), y: min(a.y, b.y),
+      width: abs(a.x - b.x), height: abs(a.y - b.y))
 
     let parkIsVisibleInMapView = !(
       (mapViewRect.origin.y + mapViewRect.size.height) < parkMapRect.origin.y ||
@@ -429,7 +429,7 @@ extension MapViewController: MKMapViewDelegate {
         + (selectedItems.count > 1 ? pageIndicatorHeight : 0))
     itemPreviewPageViewController.setViewControllers(
       [firstPage],
-      direction: UIPageViewControllerNavigationDirection.forward,
+      direction: UIPageViewController.NavigationDirection.forward,
       animated: false, completion: nil)
 
     // Appearance of page view
@@ -438,9 +438,9 @@ extension MapViewController: MKMapViewDelegate {
     appearance.currentPageIndicatorTintColor = UIColor.black
     appearance.backgroundColor = UIColor.white
 
-    addChildViewController(itemPreviewPageViewController)
+    addChild(itemPreviewPageViewController)
     view.addSubview(itemPreviewPageViewController.view)
-    itemPreviewPageViewController.didMove(toParentViewController: self)
+    itemPreviewPageViewController.didMove(toParent: self)
     self.itemPreviewPageViewController = itemPreviewPageViewController
 
     UIView.animate(withDuration: 0.3, animations: {

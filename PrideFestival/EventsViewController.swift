@@ -39,7 +39,7 @@ class EventsViewController: PrideTableViewController {
         }
         
         tableView.scrollToRow(at: IndexPath(row: itemIndex, section: dayIndex),
-                              at: UITableViewScrollPosition.top,
+                              at: UITableView.ScrollPosition.top,
                               animated: true)
         return
       }
