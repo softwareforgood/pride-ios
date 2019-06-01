@@ -1,14 +1,14 @@
 PODS:
   - Bolts/Tasks (1.9.0)
-  - Crashlytics (3.10.2):
-    - Fabric (~> 1.7.7)
-  - Fabric (1.7.7)
+  - Crashlytics (3.13.1):
+    - Fabric (~> 1.10.1)
+  - Fabric (1.10.1)
   - MDHTMLLabel (1.0.2)
-  - Parse (1.17.1):
-    - Parse/Core (= 1.17.1)
-  - Parse/Core (1.17.1):
+  - Parse (1.17.2):
+    - Parse/Core (= 1.17.2)
+  - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
-  - ReachabilitySwift (4.1.0)
+  - ReachabilitySwift (4.3.1)
 
 DEPENDENCIES:
   - Crashlytics
@@ -28,12 +28,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
-  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
+  Fabric: f6f21452846788bb44595d73e9909d79d328e617
   MDHTMLLabel: 18bf09ec7d6c1ae396497345c005857c0493ee0a
-  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
-  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
 
 PODFILE CHECKSUM: ddd0b74f6d7b043e723ebf7effe28b2be9a8ae04
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

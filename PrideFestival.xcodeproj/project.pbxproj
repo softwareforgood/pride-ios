@@ -504,7 +504,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
@@ -519,7 +519,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrideFestival/Pods-PrideFestival-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B62377E61E9A90BF00D7BFFA /* ShellScript */ = {
@@ -559,7 +559,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
@@ -574,7 +574,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrideFestivalStaging/Pods-PrideFestivalStaging-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF42E989B4651B0F4ACB1195 /* [CP] Check Pods Manifest.lock */ = {
