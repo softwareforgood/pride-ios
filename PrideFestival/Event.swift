@@ -40,7 +40,7 @@ class Event: Item {
       self.sponsor = Vendor(object: sponsor)
     }
     
-    if let image = object["image"] as? PFFile {
+    if let image = object["image"] as? PFFileObject {
       ParseManager.shared.fetchDataFrom(file: image) {
         (imageData: Data) in
         self.image = UIImage(data: imageData)
