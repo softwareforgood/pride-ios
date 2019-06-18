@@ -91,7 +91,7 @@
 		B6FB814E1C8F76EA0028D8E5 /* PrideAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB814D1C8F76EA0028D8E5 /* PrideAnnotation.swift */; };
 		B6FD77CB1CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */; };
 		B6FFBF8F1C494D5600632140 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBF8E1C494D5600632140 /* Date+Extension.swift */; };
-		CA76CF46CD66B76660A85974 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		CA76CF46CD66B76660A85974 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		D3DB8E479EC7E7DE94681BA0 /* Pods_PrideFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C86F950B57A5C24751DBF3 /* Pods_PrideFestival.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F9E2611C6A93950093095F /* libsqlite3.tbd in Frameworks */,
-				CA76CF46CD66B76660A85974 /* BuildFile in Frameworks */,
+				CA76CF46CD66B76660A85974 /* (null) in Frameworks */,
 				D3DB8E479EC7E7DE94681BA0 /* Pods_PrideFestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
