@@ -7,6 +7,7 @@ def shared_pods
   pod 'MDHTMLLabel'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Sentry'
 end
 
 target 'PrideFestival' do

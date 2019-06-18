@@ -92,6 +92,7 @@
 		B6FD77CB1CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FD77C91CAF1F47002ADB3D /* PurpleButtonTableViewCell.xib */; };
 		B6FFBF8F1C494D5600632140 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBF8E1C494D5600632140 /* Date+Extension.swift */; };
 		CA76CF46CD66B76660A85974 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		D3DB8E479EC7E7DE94681BA0 /* Pods_PrideFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C86F950B57A5C24751DBF3 /* Pods_PrideFestival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		52DE1A7B4A5C3E6BB63941E6 /* Pods_PrideFestivalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestivalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6B94E1349FF62BFDB89B9B /* Pods_PrideFestivalStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestivalStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72536BE0F217A1D2D25C640D /* Pods-PrideFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrideFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrideFestival/Pods-PrideFestival.release.xcconfig"; sourceTree = "<group>"; };
+		86C86F950B57A5C24751DBF3 /* Pods_PrideFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrideFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62904471C7D0EB500BCE934 /* PrideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrideTableViewController.swift; sourceTree = "<group>"; };
 		B636EF8A1C937541009EF372 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		B636EF8C1C937D4A009EF372 /* VendorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorTableViewCell.xib; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			files = (
 				B6F9E2611C6A93950093095F /* libsqlite3.tbd in Frameworks */,
 				CA76CF46CD66B76660A85974 /* (null) in Frameworks */,
+				D3DB8E479EC7E7DE94681BA0 /* Pods_PrideFestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +212,7 @@
 				52DE1A7B4A5C3E6BB63941E6 /* Pods_PrideFestivalTests.framework */,
 				3A51A50E5E1D8CAA999C1231 /* Pods_PrideFestivalUITests.framework */,
 				5A6B94E1349FF62BFDB89B9B /* Pods_PrideFestivalStaging.framework */,
+				86C86F950B57A5C24751DBF3 /* Pods_PrideFestival.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -505,6 +509,7 @@
 				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -512,6 +517,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHTMLLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,6 +566,7 @@
 				"${BUILT_PRODUCTS_DIR}/MDHTMLLabel/MDHTMLLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -567,6 +574,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHTMLLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
