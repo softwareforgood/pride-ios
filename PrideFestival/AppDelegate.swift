@@ -2,6 +2,7 @@ import UIKit
 import Parse
 import Fabric
 import Crashlytics
+import Sentry
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,7 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     application.shortcutItems = ShortcutManager.shared.shortcutItems()
 
+    setUpSentry()
+
     return true
+  }
+
+  private func setUpSentry() {
+    do {
+      Client.shared = try Client(dsn: "https://889c06b81eef4e748b669945a45bc04b@sentry.io/1484989")
+      try Client.shared?.startCrashHandler()
+    } catch let error {
+      print("\(error)")
+    }
+
+    Client.shared?.enableAutomaticBreadcrumbTracking()
   }
 
   func applicationWillEnterForeground(_ application: UIApplication) {
